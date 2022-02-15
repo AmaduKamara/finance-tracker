@@ -38,12 +38,12 @@ const Signup = () => {
             />
           </label>
           <label className="block text-left mt-6">
-            <span className="block text-lg">Display Name</span>
+            <span className="block text-lg">Display name</span>
             <input
               type="text"
               value={displayName}
               onChange={(e) => setDisplayName(e.target.value)}
-              placeholder="Enter displayName"
+              placeholder="Enter display name"
               required
               className="border py-4 px-3 mt-1 w-full focus:outline-teal-300"
             />
