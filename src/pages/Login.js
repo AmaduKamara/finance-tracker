@@ -3,13 +3,15 @@ import React, { useState } from "react";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
   const handleLogin = (e) => {
     e.preventDefault();
     console.log(email, password);
   };
+
   return (
     <div className="flex items-center justify-center">
-      <div className="w-1/4 p-10 border rounded-lg shadow-lg bg-white mt-40">
+      <div className="w-3/4 md:w-2/5 sm:w-2/3 p-10 border rounded-lg shadow-lg bg-white mt-40">
         <h2 className="text-3xl text-teal-600 font-thin">Login</h2>
         <form className="mt-10" onSubmit={handleLogin}>
           <label className="block text-left">
