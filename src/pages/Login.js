@@ -7,6 +7,9 @@ const Login = () => {
   const handleLogin = (e) => {
     e.preventDefault();
     console.log(email, password);
+
+    setEmail("");
+    setPassword("");
   };
 
   return (

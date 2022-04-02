@@ -8,6 +8,10 @@ const Signup = () => {
   const handleSignup = (e) => {
     e.preventDefault();
     console.log(email, password, displayName);
+
+    setEmail('')
+    setPassword('')
+    setDisplayName('')
   };
 
   return (
