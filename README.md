@@ -6,11 +6,11 @@
 
 **Login**
 
-![image](https://user-images.githubusercontent.com/50941074/161400268-180b7cc8-b61b-40f5-897d-362728ad89b5.png)
+![image](https://user-images.githubusercontent.com/50941074/161415218-d14abe50-1873-418a-806c-b4e189b98432.png)
 
 **Signup**
 
-![image](https://user-images.githubusercontent.com/50941074/161400254-467b6095-175c-4f28-94db-3a276256d1de.png)
+![image](https://user-images.githubusercontent.com/50941074/161415233-ab576ab4-ee11-44b6-9db2-1071c14606ce.png)
 
 ## Built with:
 
