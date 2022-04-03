@@ -37,8 +37,8 @@ const TransactionForm = () => {
           required
         />
       </label>
-      <button className="py-3 w-full bg-teal-500 mt-3 rounded text-white hover:bg-teal-600 focus:bg-teal-700">
-        Save
+      <button className="py-3 w-full bg-teal-500 mt-3 font-semibold tracking-wider rounded text-white hover:bg-teal-600 focus:bg-teal-700">
+        Add Transaction
       </button>
     </form>
   );
