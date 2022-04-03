@@ -31,14 +31,17 @@ const Navbar = () => {
           </>
         )}
         {user && (
-          <li className="ml-5 text-lg hover:text-teal-600 hover:underline">
-            <button
-              className="border py-1 px-3 rounded border-teal-500 hover:bg-teal-500 hover:text-white focus:bg-teal-600"
-              onClick={logout}
-            >
-              Logout
-            </button>
-          </li>
+          <>
+            <li className="ml-5 text-lg">Hello, {user.displayName}!</li>
+            <li className="ml-5 text-lg hover:text-teal-600 hover:underline">
+              <button
+                className="border py-1 px-3 rounded border-teal-500 hover:bg-teal-500 hover:text-white focus:bg-teal-600"
+                onClick={logout}
+              >
+                Logout
+              </button>
+            </li>
+          </>
         )}
       </ul>
     </div>
