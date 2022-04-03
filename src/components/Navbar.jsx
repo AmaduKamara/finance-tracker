@@ -11,7 +11,7 @@ const Navbar = () => {
   const { user } = useAuthContext();
 
   return (
-    <div className="container mx-auto py-5 shadow-xl bg-white rounded-b-lg border-l-4 border-r-4 border-teal-500 flex items-center justify-between px-16">
+    <div className="py-5 shadow-xl bg-white rounded-b-lg border-l-4 border-r-4 border-teal-500 flex items-center justify-between px-16">
       <Link
         to="/"
         className="text-teal-500 text-2xl font-semibold flex items-center"
