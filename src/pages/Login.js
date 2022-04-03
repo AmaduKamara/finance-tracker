@@ -1,12 +1,16 @@
 import React, { useState } from "react";
+import { useLogin } from "../hooks/useLogin";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const { login, error, isPending } = useLogin();
+
   const handleLogin = (e) => {
     e.preventDefault();
-    console.log(email, password);
+    // console.log(email, password);
+    login(email, password);
 
     setEmail("");
     setPassword("");
@@ -40,12 +44,24 @@ const Login = () => {
             />
           </label>
           <div className="mt-5">
-            <button
-              type="submit"
-              className="w-full p-3 text-white bg-teal-500 rounded-md text-lg hover:text-teal-100 hover:bg-teal-700 focus:outline-teal-700"
-            >
-              Login
-            </button>
+            {!isPending && (
+              <button
+                type="submit"
+                className="w-full p-3 text-white bg-teal-500 rounded-md text-lg hover:text-teal-100 hover:bg-teal-700 focus:outline-teal-700"
+              >
+                Login
+              </button>
+            )}
+            {isPending && (
+              <button
+                type="submit"
+                className="w-full p-3 text-teal border border-teal-500 rounded-md text-lg hover:text-teal-100 focus:outline-teal-700"
+                disabled
+              >
+                Loading...
+              </button>
+            )}
+            {error && <p className="mt-2 text-red-300">{error}</p>}
           </div>
         </form>
       </div>
