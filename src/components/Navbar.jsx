@@ -24,9 +24,14 @@ const Navbar = () => {
           <Link to="/signup">Signup</Link>
         </li>
         <li className="ml-5 text-lg hover:text-teal-600 hover:underline">
-          <button onClick={logout}>Logout</button>
+          <button
+            className="border py-1 px-3 rounded border-teal-500 hover:bg-teal-500 hover:text-white focus:bg-teal-600"
+            onClick={logout}
+          >
+            Logout
+          </button>
         </li>
-      </ul> 
+      </ul>
     </div>
   );
 };
