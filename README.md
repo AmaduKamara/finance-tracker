@@ -13,6 +13,11 @@
 
 ![image](https://user-images.githubusercontent.com/50941074/161423459-3b5814f4-14f7-4a1b-8dd8-70535d776d78.png)
 
+**Transactions Page**
+
+![image](https://user-images.githubusercontent.com/50941074/161450399-5f5eb900-5881-4f17-a3ea-1ce767734aa8.png)
+
+
 ## Built with:
 
 - React
