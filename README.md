@@ -7,11 +7,11 @@
 
 **Login**
 
-![image](https://user-images.githubusercontent.com/50941074/161415218-d14abe50-1873-418a-806c-b4e189b98432.png)
+![image](https://user-images.githubusercontent.com/50941074/161423477-fa3adbf4-9444-4762-ae41-858769176f45.png)
 
 **Signup**
 
-![image](https://user-images.githubusercontent.com/50941074/161415233-ab576ab4-ee11-44b6-9db2-1071c14606ce.png)
+![image](https://user-images.githubusercontent.com/50941074/161423459-3b5814f4-14f7-4a1b-8dd8-70535d776d78.png)
 
 ## Built with:
 
