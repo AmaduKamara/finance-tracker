@@ -1,17 +1,21 @@
 import { useState } from "react";
+import { useSignup } from "../hooks/useSignup";
 
 const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [displayName, setDisplayName] = useState("");
+  const { error, isPending, signUp } = useSignup();
 
   const handleSignup = (e) => {
     e.preventDefault();
-    console.log(email, password, displayName);
+    // console.log(email, password, displayName);
 
-    setEmail('')
-    setPassword('')
-    setDisplayName('')
+    signUp(email, password, displayName);
+
+    setEmail("");
+    setPassword("");
+    setDisplayName("");
   };
 
   return (
@@ -53,12 +57,24 @@ const Signup = () => {
             />
           </label>
           <div className="mt-5">
-            <button
-              type="submit"
-              className="w-full p-3 text-white bg-teal-500 rounded-md text-lg hover:text-teal-100 hover:bg-teal-700 focus:outline-teal-700"
-            >
-              Signup
-            </button>
+            {!isPending && (
+              <button
+                type="submit"
+                className="w-full p-3 text-white bg-teal-500 rounded-md text-lg hover:text-teal-100 hover:bg-teal-700 focus:outline-teal-700"
+              >
+                Signup
+              </button>
+            )}
+            {isPending && (
+              <button
+                type="submit"
+                className="w-full p-3 text-teal border border-teal-500 rounded-md text-lg hover:text-teal-100 focus:outline-teal-700"
+                disabled
+              >
+                Loading...
+              </button>
+            )}
+            {error && <p>{error}</p>}
           </div>
         </form>
       </div>
