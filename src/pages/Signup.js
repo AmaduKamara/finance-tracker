@@ -20,7 +20,7 @@ const Signup = () => {
 
   return (
     <div className="flex items-center justify-center">
-      <div className="w-3/4 md:w-2/5 sm:w-2/3 p-10 border rounded-lg shadow-lg bg-white mt-40">
+      <div className="w-3/4 md:w-2/5 sm:w-2/3 p-10 border rounded-lg shadow-lg bg-white mt-24">
         <h2 className="text-3xl text-teal-600 font-thin">Signup</h2>
         <form className="mt-10" onSubmit={handleSignup}>
           <label className="block text-left">
@@ -74,7 +74,7 @@ const Signup = () => {
                 Loading...
               </button>
             )}
-            {error && <p>{error}</p>}
+            {error && <p className="mt-2 text-red-300">{error}</p>}
           </div>
         </form>
       </div>
