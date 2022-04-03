@@ -19,3 +19,7 @@
 - ReactIcons
 - Tailwindcss
 - Firebase
+
+## Authors:
+- Shaun Pelling (Udemy Course)
+- Amadu Kamara (Student)
