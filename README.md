@@ -1,6 +1,7 @@
 # Finance Tracker App
 
-> The My~Finance Tracker app keeps track of all items you spend money on. A user can logged in and enter all items and expendituires.
+> The My~Finance Tracker app keeps track of all items you spend money on. A user can create account, login, and enter all items' expenditures.
+> An app that help keep all your financial transactions and expenditures. Store every financial transaction and money used in your account and tract your financial details on the app
 
 ## Screenshots:
 
