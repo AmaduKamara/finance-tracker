@@ -23,8 +23,14 @@ const TransactionForm = ({ uid }) => {
   }, [response.success]);
 
   return (
-    <form className="border py-4 px-2 mt-5 shadow-lg" onSubmit={handleSubmit}>
-      <label className="mb-4 block">
+    <form
+      className="border pb-8 pt-4 bg-white px-2 mt-5 shadow-lg"
+      onSubmit={handleSubmit}
+    >
+      <h2 className="text-teal-600 font-thin text-xl md:text-2xl lg:text-3xl">
+        Add Transaction
+      </h2>
+      <label className="mb-4 block mt-4">
         <span className="block mb-1">Transaction name:</span>
         <input
           className="border py-3 rounded w-full px-2 border-teal-500 focus:outline-teal-600 focus:border-2"
